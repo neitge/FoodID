@@ -1,0 +1,35 @@
+{% extends "OnePlatformBundle::generale.html.twig" %}
+
+{% block title %}
+  Lecture d'un plat - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+  <h2>{{ advert.title }}</h2>
+
+
+
+    <i>Par {{ advert.author }}, le {{ advert.date|date('d/m/Y') }}</i>
+
+  <div class="well">
+    {{ advert.content }}
+  </div>
+
+  <p>
+    
+    <a href="{{ path('one_platform_edit', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-edit"></i>
+      Modifier plat
+    </a>
+    <a href="{{ path('one_platform_delete', {'id': advert.id}) }}" class="btn btn-danger">
+      <i class="glyphicon glyphicon-trash"></i>
+      Supprimer plat
+    </a>
+      <a href="{{ path('one_platform_home') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      Retour à l'index du site
+    </a>
+  </p>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+services:
+#    one_platform.example:
+#        class: One\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+
+
+
+    One_platform.antispam:
+        class: One\PlatformBundle\Antispam\OneAntispam

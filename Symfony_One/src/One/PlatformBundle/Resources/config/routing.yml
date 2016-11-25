@@ -1,0 +1,36 @@
+
+One_platform_home:
+    path:      /{page}
+    defaults:
+        _controller: OnePlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+    
+One_platform_view:
+    path:      /advert/{id}
+    defaults:
+        _controller: OnePlatformBundle:Advert:view
+    requirements:
+        id: \d+
+
+One_platform_add:
+    path:      /add
+    defaults:
+        _controller: OnePlatformBundle:Advert:add
+
+One_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: OnePlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+
+One_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: OnePlatformBundle:Advert:delete
+    requirements:
+        id: \d+
+        
+        

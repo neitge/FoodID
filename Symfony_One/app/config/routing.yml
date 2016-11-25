@@ -1,0 +1,4 @@
+one_platform:
+    resource: "@OnePlatformBundle/Resources/config/routing.yml"
+    prefix:   /
+

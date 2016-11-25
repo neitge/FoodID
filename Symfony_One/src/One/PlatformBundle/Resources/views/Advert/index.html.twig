@@ -1,0 +1,91 @@
+{# src/One/PlatformBundle/Resources/views/Advert/ensemble.html.twig #}
+
+{% extends "OnePlatformBundle::ensemble.html.twig" %}
+{% set page = 'home' %}
+
+{% block body %} 
+
+
+
+
+
+
+
+
+
+     <!-- Full Width Image Header with Logo -->
+        <!-- Image backgrounds are set within the full-width-pics.css file. -->
+    <div class="image-bg-fluid-height">
+        <img class="img-responsive img-center" src="/Symfony_One/web/bundles/framework/images/FoodIDlogo.png" alt="">
+    </div>
+    
+
+    <!-- Content Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">A propos de nous</h1>
+                    <p class="lead section-lead">Etudiants de l'ESIEA</p>
+                    <p class="section-paragraph">Actuellement en école d'ingénieur en 4ème année, nous réalisons à travers ce site un projet dans le but    de nous améliorer dans la programmation Web en utilisant des technologies avancées, pour ce faire nous avons utilisé le framework   <a href="https://symfony.com/" title="Vous ne le regretterez pas !" target="_blank">Symfony</a>.<br>
+                        Le but étant de construire un site de présentation de plats, le site est encore en cours de construction.    
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixed Height Image Aside -->
+    <!-- Image backgrounds are set within the full-width-pics.css file. -->
+    <aside class="image-bg-fixed-height"></aside>
+    
+
+    <!-- Food Section -->
+     <section id="plat" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Plats sélectionnés</h2>
+
+                </div>
+            </div>
+
+    </section>
+
+
+    <!-- Content Section -->
+     <section id="contact" class="container content-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="section-heading">Contactez-nous</h1>
+                    <p> <img class="img-responsive img-center" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png" ></p>
+                    <p class="lead section-lead">Sur Facebook !!</p>
+                    <p class="section-paragraph"> 
+                        <ul class="list-inline banner-social-buttons">
+                            <li>
+                                <a href="https://www.facebook.com/clement.daniere" class="btn btn-default btn-lg" target="_blank"><span class="network-name">Clément DANIERE</span></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/reda.chetto" class="btn btn-default btn-lg" target="_blank"><span class="network-name">Reda CHETTO</span></a>
+                            </li>      
+                    </p>
+                    
+                    <p> <img class="img-responsive img-center" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png">
+                    </p>
+                        <p class="lead section-lead">Sur Github ! !</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+
+
+
+
+
+
+
+{% endblock %}
